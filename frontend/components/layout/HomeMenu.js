@@ -5,7 +5,7 @@ export default function HomeMenu() {
         <section className="relative">
             <div className="flex justify-center items-center">
                 {/* First Image */}
-                <div className="h-32 w-32 absolute left-0 mt-20">
+                <div className="h-32 w-32 absolute left-0 mt-20 hidden md:block">
                     <Image 
                         src="/bag-2-product.jpg" 
                         layout="fill" 

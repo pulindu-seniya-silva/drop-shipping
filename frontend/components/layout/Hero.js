@@ -2,7 +2,7 @@ import Right from '../icons/Right';
 
 export default function Hero() {
   return (
-    <section className="hero grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8" >
+    <section className="hero grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8 ml-2" >
       <div className="max-w-lg -ml-8 py-7">
         <h1 className="text-3xl md:text-4xl font-semibold">Stand out from the crowd</h1>
         <p className="my-4 text-gray-500 text-sm my-6">
