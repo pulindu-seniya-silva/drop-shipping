@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function HomeMenu() {
     return (
-        <section className="">
-            <div className="relative flex justify-center items-center">
+        <section className="relative">
+            <div className="flex justify-center items-center">
                 {/* First Image */}
                 <div className="h-32 w-32 absolute left-0 mt-20">
                     <Image 
@@ -15,7 +15,7 @@ export default function HomeMenu() {
                 </div>
 
                 {/* Second Image */}
-                <div className="h-64 w-64 absolute right-0 mt-20">
+                <div className="h-64 w-64 absolute right-0 mt-20 hidden md:block">
                     <Image 
                         src="/sport-items.png" 
                         layout="fill" 
@@ -32,12 +32,12 @@ export default function HomeMenu() {
             </div>
 
             {/* Product Squares */}
-            <div className="grid grid-cols-4 gap-4 py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-5">
                 {/* Product 1 */}
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/headphone.jpg" 
-                        alt="headphone" 
+                        alt="Headphones" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
                     <h4 className="text-lg font-bold mt-2">Headphones</h4>
@@ -51,10 +51,10 @@ export default function HomeMenu() {
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/watch.jpg" 
-                        alt="watch" 
+                        alt="Watch" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
-                    <h4 className="text-lg font-bold mt-2">watch</h4>
+                    <h4 className="text-lg font-bold mt-2">Watch</h4>
                     <p className="text-gray-500 text-sm mt-1">Stylish watch</p>
                     <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
                         Add to Cart $20
@@ -62,13 +62,13 @@ export default function HomeMenu() {
                 </div>
                 
                 {/* Product 3 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4 ">
+                <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/shoes.jpg" 
-                        alt="shoes" 
+                        alt="Shoes" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
-                    <h4 className="text-lg font-bold mt-2">shoes</h4>
+                    <h4 className="text-lg font-bold mt-2">Shoes</h4>
                     <p className="text-gray-500 text-sm mt-1">Comfortable shoes</p>
                     <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
                         Add to Cart $25
@@ -79,7 +79,7 @@ export default function HomeMenu() {
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/bag.jpg" 
-                        alt="bag" 
+                        alt="Bag" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
                     <h4 className="text-lg font-bold mt-2">Bag</h4>
@@ -89,12 +89,14 @@ export default function HomeMenu() {
                     </button>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-4 py-5">
-            {/* Product 1 */}
-            <div className="bg-gray-300 rounded-lg text-center p-4">
+
+            {/* Another row of products */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-5">
+                {/* Product 1 */}
+                <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/hat.jpg" 
-                        alt="headphone" 
+                        alt="Hat" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
                     <h4 className="text-lg font-bold mt-2">Hat</h4>
@@ -108,10 +110,10 @@ export default function HomeMenu() {
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/bottle.jpg" 
-                        alt="watch" 
+                        alt="Bottle" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
-                    <h4 className="text-lg font-bold mt-2">bottle</h4>
+                    <h4 className="text-lg font-bold mt-2">Bottle</h4>
                     <p className="text-gray-500 text-sm mt-1">Healthy bottles</p>
                     <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
                         Add to Cart $20
@@ -122,11 +124,11 @@ export default function HomeMenu() {
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/clothes.jpg" 
-                        alt="shoes" 
+                        alt="Clothes" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
-                    <h4 className="text-lg font-bold mt-2">clothes</h4>
-                    <p className="text-gray-500 text-sm mt-1">beautiful clothes</p>
+                    <h4 className="text-lg font-bold mt-2">Clothes</h4>
+                    <p className="text-gray-500 text-sm mt-1">Beautiful clothes</p>
                     <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
                         Add to Cart $25
                     </button>
@@ -136,16 +138,15 @@ export default function HomeMenu() {
                 <div className="bg-gray-300 rounded-lg text-center p-4">
                     <img 
                         src="/mouse.jpg" 
-                        alt="bag" 
+                        alt="Mouse" 
                         className="w-full h-40 object-contain rounded-md" 
                     />
-                    <h4 className="text-lg font-bold mt-2">mouse</h4>
-                    <p className="text-gray-500 text-sm mt-1">Usefull hardware products</p>
+                    <h4 className="text-lg font-bold mt-2">Mouse</h4>
+                    <p className="text-gray-500 text-sm mt-1">Useful hardware products</p>
                     <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
                         Add to Cart $30
                     </button>
                 </div>
-
             </div>
         </section>
     );
