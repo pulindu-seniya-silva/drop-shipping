@@ -53,7 +53,7 @@ export default function Header() {
       <div
         className={`md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 px-6 space-y-4 ${
           isMenuOpen ? 'block' : 'hidden'
-        }`}
+        } z-50`}
       >
         {/* Close button for mobile menu */}
         <div className="flex justify-between items-center">

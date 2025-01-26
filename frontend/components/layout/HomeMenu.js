@@ -32,7 +32,7 @@ export default function HomeMenu() {
             </div>
 
             {/* Product Squares */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-4">
                 {/* Product 1 */}
                 <div className="bg-gray-300 rounded-lg text-center p-4 -4 hover:bg-white hover:shadow-md hover:shadow-gray-900/20 transition-all">
                     <img 
