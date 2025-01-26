@@ -19,11 +19,12 @@ export default function Header() {
 
       {/* Navigation Links (Desktop) */}
       <nav className="hidden md:flex items-center gap-8 text-gray-500 font-semibold">
-        <Link href={''}>Home</Link>
-        <Link href={''}>Product Menu</Link>
-        <Link href={''}>About</Link>
-        <Link href={''}>Contact</Link>
-        <Link href={''} className="bg-primary rounded-full text-white px-8 py-2">
+        <Link className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Home</Link>
+        <Link className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200"  href={''}>Product Menu</Link>
+        <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Help Desk</Link>
+        <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Support Us</Link>
+        <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Contact Us</Link>
+        <Link className="bg-primary rounded-full text-white px-8 py-2 hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out" href={''} >
           Login
         </Link>
       </nav>

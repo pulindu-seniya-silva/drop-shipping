@@ -9,7 +9,7 @@ export default function Hero() {
           Find your unique path to fitness with world-class health and wellness gear at <span className="text-primary">ClickShop Express</span>. 
         </p>
         <div className="flex flex-wrap gap-4 mt-3  text-sm ">
-          <button className="bg-primary flex items-center gap-2 text-white px-6 py-2 rounded-full -ml-1 uppercase items-center">
+          <button className="bg-primary flex items-center gap-2 text-white px-6 py-2 rounded-full -ml-1 uppercase items-center hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
             Shop Now
             <Right />
           </button>
