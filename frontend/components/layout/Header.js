@@ -24,8 +24,9 @@ export default function Header() {
         <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Help Desk</Link>
         <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Support Us</Link>
         <Link  className="block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Contact Us</Link>
+        <Link  className=" block text-gray-500 hover:text-white hover:bg-primary hover:px-4 hover:py-2 hover:rounded-lg transition-all duration-200" href={''}>Login</Link>
         <Link className="bg-primary rounded-full text-white px-8 py-2 hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out" href={''} >
-          Login
+          Register
         </Link>
       </nav>
 
@@ -51,7 +52,7 @@ export default function Header() {
 
       {/* Mobile Navigation (Hidden by default, shown when toggled) */}
       <div
-        className={`md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 px-6 space-y-4 ${
+        className={`md:hidden absolute top-12 left-0 w-full bg-white shadow-md py-4 px-6 space-y-4 ${
           isMenuOpen ? 'block' : 'hidden'
         } z-50`}
       >
@@ -88,16 +89,19 @@ export default function Header() {
           Product Menu
         </Link>
         <Link href={''} className="block text-gray-500 hover:text-primary">
-          About
+          Help Desk
         </Link>
         <Link href={''} className="block text-gray-500 hover:text-primary">
-          Contact
+          Contact Us
+        </Link>
+        <Link href={''} className="block text-gray-500 hover:text-primary">
+          Login
         </Link>
         <Link
           href={''}
           className="block bg-primary rounded-full text-white px-8 py-2 text-center"
         >
-          Login
+          Register
         </Link>
       </div>
     </header>
