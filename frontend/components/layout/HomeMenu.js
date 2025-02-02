@@ -5,7 +5,7 @@ export default function HomeMenu() {
         <section className="relative">
             <div className="flex justify-center items-center">
                 {/* First Image */}
-                <div className="h-32 w-32 absolute left-0 mt-20">
+                <div className="h-32 w-32 absolute left-0 mt-20 hidden md:block">
                     <Image 
                         src="/bag-2-product.jpg" 
                         layout="fill" 
@@ -32,9 +32,9 @@ export default function HomeMenu() {
             </div>
 
             {/* Product Squares */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-4">
                 {/* Product 1 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 -4 hover:bg-white hover:shadow-md hover:shadow-gray-900/20 transition-all">
                     <img 
                         src="/headphone.jpg" 
                         alt="Headphones" 
@@ -42,13 +42,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Headphones</h4>
                     <p className="text-gray-500 text-sm mt-1">Amazing headphones</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $15
                     </button>
                 </div>
                 
                 {/* Product 2 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/20 transition-all">
                     <img 
                         src="/watch.jpg" 
                         alt="Watch" 
@@ -56,13 +56,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Watch</h4>
                     <p className="text-gray-500 text-sm mt-1">Stylish watch</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $20
                     </button>
                 </div>
                 
                 {/* Product 3 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/shoes.jpg" 
                         alt="Shoes" 
@@ -70,13 +70,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Shoes</h4>
                     <p className="text-gray-500 text-sm mt-1">Comfortable shoes</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $25
                     </button>
                 </div>
                 
                 {/* Product 4 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/bag.jpg" 
                         alt="Bag" 
@@ -84,7 +84,7 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Bag</h4>
                     <p className="text-gray-500 text-sm mt-1">Trendy bag</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $30
                     </button>
                 </div>
@@ -93,7 +93,7 @@ export default function HomeMenu() {
             {/* Another row of products */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-5">
                 {/* Product 1 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4  hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/hat.jpg" 
                         alt="Hat" 
@@ -101,13 +101,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Hat</h4>
                     <p className="text-gray-500 text-sm mt-1">Amazing hats</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $15
                     </button>
                 </div>
                 
                 {/* Product 2 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/bottle.jpg" 
                         alt="Bottle" 
@@ -115,13 +115,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Bottle</h4>
                     <p className="text-gray-500 text-sm mt-1">Healthy bottles</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $20
                     </button>
                 </div>
                 
                 {/* Product 3 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/clothes.jpg" 
                         alt="Clothes" 
@@ -129,13 +129,13 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Clothes</h4>
                     <p className="text-gray-500 text-sm mt-1">Beautiful clothes</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $25
                     </button>
                 </div>
                 
                 {/* Product 4 */}
-                <div className="bg-gray-300 rounded-lg text-center p-4">
+                <div className="bg-gray-300 rounded-lg text-center p-4 hover:bg-white hover:shadow-md hover:shadow-gray-900/25 transition-all">
                     <img 
                         src="/mouse.jpg" 
                         alt="Mouse" 
@@ -143,7 +143,7 @@ export default function HomeMenu() {
                     />
                     <h4 className="text-lg font-bold mt-2">Mouse</h4>
                     <p className="text-gray-500 text-sm mt-1">Useful hardware products</p>
-                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-blue-600">
+                    <button className="mt-3 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-900 hover:shadow-lg transform hover:scale-105 transition-all duration-200 ease-in-out">
                         Add to Cart $30
                     </button>
                 </div>

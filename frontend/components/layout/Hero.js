@@ -2,18 +2,18 @@ import Right from '../icons/Right';
 
 export default function Hero() {
   return (
-    <section className="hero grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8" >
-      <div className="max-w-lg -ml-8 py-7">
+    <section className="hero grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8 ml-2" >
+      <div className="max-w-lg -ml-8 py-6">
         <h1 className="text-3xl md:text-4xl font-semibold">Stand out from the crowd</h1>
         <p className="my-4 text-gray-500 text-sm my-6">
           Find your unique path to fitness with world-class health and wellness gear at <span className="text-primary">ClickShop Express</span>. 
         </p>
         <div className="flex flex-wrap gap-4 mt-3  text-sm ">
-          <button className="bg-primary flex items-center gap-2 text-white px-6 py-2 rounded-full -ml-1 uppercase items-center">
+          <button className="bg-primary flex items-center gap-2 text-white px-6 py-2 rounded-full -ml-1 uppercase items-center hover:bg-red-900 hover:shadow-lg transition-all hover:scale-105">
             Shop Now
             <Right />
           </button>
-          <button className="flex items-center gap-2 py-2 text-gray-600 font-semibold">
+          <button className="flex items-center gap-2 py-2 text-gray-600 font-semibold hover:scale-105 hover:text-red-900">
             Learn more
             <Right />
           </button>
