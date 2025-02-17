@@ -1,5 +1,5 @@
 <img src="img/1.png" width="400" alt="Alt Text">
-
+<img src ="img/2.png"  width="400" alt="Alt Text">
 
 
 # FrontEnd
